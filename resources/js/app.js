@@ -1,5 +1,5 @@
 import './bootstrap';
-import '/resources/tailadmin/js/index.js';
+//import '/resources/tailadmin/js/index.js';
 import Alpine from 'alpinejs';
 
 

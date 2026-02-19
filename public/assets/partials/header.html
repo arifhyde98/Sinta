@@ -4,8 +4,6 @@
 >
   <div
     class="flex grow flex-col items-center justify-between lg:flex-row lg:px-6"
-   
-
   >
     <div
       class="flex w-full items-center justify-between gap-2 border-b border-gray-200 px-3 py-3 sm:gap-4 lg:justify-normal lg:border-b-0 lg:px-0 lg:py-4 dark:border-gray-800"
@@ -70,10 +68,10 @@
       <!-- Hamburger Toggle BTN -->
 
       <a href="index.html" class="lg:hidden">
-        <img class="dark:hidden" src="{{ asset('assets/images/logo/logo.svg') }}" alt="Logo" />
+        <img class="dark:hidden" src="./images/logo/logo.svg" alt="Logo" />
         <img
           class="hidden dark:block"
-          src="{{ asset('assets/images/logo/logo-dark.svg') }}"
+          src="./images/logo/logo-dark.svg"
           alt="Logo"
         />
       </a>
@@ -263,7 +261,7 @@
                     class="relative z-1 block h-10 w-full max-w-10 rounded-full"
                   >
                     <img
-                      src="{{ asset('assets/images/user/user-02.jpg') }}"
+                      src="./images/user/user-02.jpg"
                       alt="User"
                       class="overflow-hidden rounded-full"
                     />
@@ -305,7 +303,7 @@
                     class="relative z-1 block h-10 w-full max-w-10 rounded-full"
                   >
                     <img
-                      src="{{ asset('assets/images/user/user-03.jpg') }}"
+                      src="./images/user/user-03.jpg"
                       alt="User"
                       class="overflow-hidden rounded-full"
                     />
@@ -347,7 +345,7 @@
                     class="relative z-1 block h-10 w-full max-w-10 rounded-full"
                   >
                     <img
-                      src="{{ asset('assets/images/user/user-04.jpg') }}"
+                      src="./images/user/user-04.jpg"
                       alt="User"
                       class="overflow-hidden rounded-full"
                     />
@@ -389,7 +387,7 @@
                     class="relative z-1 block h-10 w-full max-w-10 rounded-full"
                   >
                     <img
-                      src="{{ asset('assets/images/user/user-05.jpg') }}"
+                      src="./images/user/user-05.jpg"
                       alt="User"
                       class="overflow-hidden rounded-full"
                     />
@@ -431,7 +429,7 @@
                     class="relative z-1 block h-10 w-full max-w-10 rounded-full"
                   >
                     <img
-                      src="{{ asset('assets/images/user/user-02.jpg') }}"
+                      src="./images/user/user-02.jpg"
                       alt="User"
                       class="overflow-hidden rounded-full"
                     />
@@ -473,7 +471,7 @@
                     class="relative z-1 block h-10 w-full max-w-10 rounded-full"
                   >
                     <img
-                      src="{{ asset('assets/images/user/user-03.jpg') }}"
+                      src="./images/user/user-03.jpg"
                       alt="User"
                       class="overflow-hidden rounded-full"
                     />
@@ -515,7 +513,7 @@
                     class="relative z-1 block h-10 w-full max-w-10 rounded-full"
                   >
                     <img
-                      src="{{ asset('assets/images/user/user-04.jpg') }}"
+                      src="./images/user/user-04.jpg"
                       alt="User"
                       class="overflow-hidden rounded-full"
                     />
@@ -557,7 +555,7 @@
                     class="relative z-1 block h-10 w-full max-w-10 rounded-full"
                   >
                     <img
-                      src="{{ asset('assets/images/user/user-05.jpg') }}"
+                      src="./images/user/user-05.jpg"
                       alt="User"
                       class="overflow-hidden rounded-full"
                     />
@@ -615,10 +613,10 @@
           @click.prevent="dropdownOpen = ! dropdownOpen"
         >
           <span class="mr-3 h-11 w-11 overflow-hidden rounded-full">
-            <img src="{{ asset('assets/images/user/owner.jpg') }}" alt="User" />
+            <img src="./images/user/owner.jpg" alt="User" />
           </span>
 
-          <span class="text-theme-sm mr-1 block font-medium">  {{ auth()->user()->name }} </span>
+          <span class="text-theme-sm mr-1 block font-medium"> Musharof </span>
 
           <svg
             :class="dropdownOpen && 'rotate-180'"
@@ -648,12 +646,12 @@
             <span
               class="text-theme-sm block font-medium text-gray-700 dark:text-gray-400"
             >
-              {{ auth()->user()->name }}
+              Musharof Chowdhury
             </span>
             <span
               class="text-theme-xs mt-0.5 block text-gray-500 dark:text-gray-400"
             >
-              {{ auth()->user()->email }}
+              randomuser@pimjo.com
             </span>
           </div>
 
@@ -662,7 +660,7 @@
           >
             <li>
               <a
-                href="{{ route('profile.edit') }}"
+                href="profile.html"
                 class="group text-theme-sm flex items-center gap-3 rounded-lg px-3 py-2 font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-white/5 dark:hover:text-gray-300"
               >
                 <svg
@@ -730,16 +728,10 @@
               </a>
             </li>
           </ul>
-          <button 
+          <button
             class="group text-theme-sm mt-3 flex items-center gap-3 rounded-lg px-3 py-2 font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-white/5 dark:hover:text-gray-300"
           >
-            
-
-           <form method="POST" action="{{ route('logout') }}">
-    @csrf
-    <button type="submit"
-        class="w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700">
-        <svg
+            <svg
               class="fill-gray-500 group-hover:fill-gray-700 dark:group-hover:fill-gray-300"
               width="24"
               height="24"
@@ -754,9 +746,8 @@
                 fill=""
               />
             </svg>
-        Logout
-    </button>
-</form>
+
+            Sign out
           </button>
         </div>
         <!-- Dropdown End -->

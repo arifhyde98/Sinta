@@ -9,10 +9,10 @@
   >
     <a href="index.html">
       <span class="logo" :class="sidebarToggle ? 'hidden' : ''">
-        <img class="dark:hidden" src="{{ asset('assets/images/logo/logo.svg') }}" alt="Logo" />
+        <img class="dark:hidden" src="./images/logo/logo.svg" alt="Logo" />
         <img
           class="hidden dark:block"
-          src="{{ asset('assets/images/logo/logo-dark.svg') }}"
+          src="./images/logo/logo-dark.svg"
           alt="Logo"
         />
       </span>
@@ -20,7 +20,7 @@
       <img
         class="logo-icon"
         :class="sidebarToggle ? 'lg:block' : 'hidden'"
-        src="{{ asset('assets/images/logo/logo-icon.svg') }}"
+        src="./images/logo/logo-icon.svg"
         alt="Logo"
       />
     </a>
@@ -754,8 +754,7 @@
     </nav>
     <!-- Sidebar Menu -->
 
-    
-<!-- Promo Box -->
+    <!-- Promo Box -->
     <div
       :class="sidebarToggle ? 'lg:hidden' : ''"
       class="mx-auto mb-10 w-full max-w-60 rounded-2xl bg-gray-50 px-4 py-5 text-center dark:bg-white/[0.03]"
@@ -775,5 +774,6 @@
         Purchase Plan
       </a>
     </div>
-    <!-- Promo Box -->  </div>
+    <!-- Promo Box -->
+  </div>
 </aside>

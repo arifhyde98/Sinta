@@ -50,5 +50,6 @@
     </div>
     <!-- ===== Page Wrapper End ===== -->
   </body>
-   @include('/admin/partials/footer')
+   <!-- ===== @include('/admin/partials/footer') ===== -->
+
 </html>

@@ -3,7 +3,7 @@ import "flatpickr/dist/flatpickr.min.css";
 import "dropzone/dist/dropzone.css";
 import "../css/style.css";
 
-//import Alpine from "alpinejs";
+import Alpine from "alpinejs";
 import persist from "@alpinejs/persist";
 import flatpickr from "flatpickr";
 import Dropzone from "dropzone";
@@ -17,7 +17,7 @@ import "./components/image-resize";
 
 Alpine.plugin(persist);
 window.Alpine = Alpine;
-//Alpine.start();
+Alpine.start();
 
 // Init flatpickr
 flatpickr(".datepicker", {
